@@ -29,6 +29,8 @@
     
     IBOutlet UIView *viewContainer;
     IBOutlet UIScrollView *scrlView;
+    __weak IBOutlet UIStackView *formFieldsContainer;
+    
 }
 - (IBAction)btnSubmit:(id)sender;
 
@@ -42,13 +44,20 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [self setupAlerts];
     
-    txtDemo=[[TextFieldValidator alloc] initWithFrame:CGRectMake(20, 200, 280, 30)];
+    txtDemo=[[TextFieldValidator alloc] init];
+    txtDemo.translatesAutoresizingMaskIntoConstraints = NO;
     txtDemo.borderStyle=UITextBorderStyleRoundedRect;
     txtDemo.placeholder=@"Programmatically created - Email";
     txtDemo.delegate=self;
-    txtDemo.presentInView=self.view;
-    [viewContainer addSubview:txtDemo];
+    txtDemo.presentInView= viewContainer;
+    txtDemo.validateOnResign = YES;
+
+    
+    [formFieldsContainer addArrangedSubview:txtDemo];
+    [formFieldsContainer didAddSubview:txtDemo];
+    //[formFieldsContainer layoutSubviews];
     [txtDemo addRegx:REGEX_EMAIL withMsg:@"Enter valid email."];
+    txtDemo.delegate=self;
 }
 
 -(void)setupAlerts{
@@ -83,7 +92,7 @@
 #pragma mark - UITextFieldDelegate
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
     if(txtDemo==textField){
-        [scrlView setContentOffset:CGPointMake(0, 50) animated:YES];
+//        [scrlView setContentOffset:CGPointMake(0, 50) animated:YES];
     }
 }
 

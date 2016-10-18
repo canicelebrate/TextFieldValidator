@@ -7,12 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "TextFieldValidator.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    //TextFieldValidator appearance customization
+    [[TextFieldValidator appearance] setPopUpColor:[UIColor orangeColor]];
+    UIImage* img = [UIImage imageNamed:@"customError"];
+    [[TextFieldValidator appearance] setErrorImg:img];
+    [[TextFieldValidator appearance] setPopUpShadowColor:[UIColor clearColor]];
+    [[TextFieldValidator appearance] setPopUpFont:[UIFont fontWithName:FontName size:25]];
+    
     return YES;
 }
 							

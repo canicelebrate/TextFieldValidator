@@ -11,7 +11,7 @@
 /**
     Image name for showing error on textfield.
  */
-#define IconImageName @"error.png"
+#define IconImageName @"error"
 
 /**
     Background color of message popup.
@@ -51,12 +51,22 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface TextFieldValidator : UITextField<UITextFi
 
 }
 
+@property (nonatomic,strong) UIImage* errorImg UI_APPEARANCE_SELECTOR;
+    
 @property (nonatomic,assign) BOOL isMandatory;   /**< Default is YES*/
 
 @property (nonatomic,retain) IBOutlet UIView *presentInView;    /**< Assign view on which you want to show popup and it would be good if you provide controller's view*/
 
-@property (nonatomic,retain) UIColor *popUpColor;   /**< Assign popup background color, you can also assign default popup color from macro "ColorPopUpBg" at the top*/
-
+@property (nonatomic,retain) UIColor *popUpColor UI_APPEARANCE_SELECTOR;   /**< Assign popup background color, you can also assign default popup color from macro "ColorPopUpBg" at the top*/
+@property (nonatomic,strong) UIColor* popUpShadowColor UI_APPEARANCE_SELECTOR;/**< Assign popup border shadow color, default shadow color is black*/
+    
+    
+@property (nonatomic,retain) UIColor* popUpFontColor UI_APPEARANCE_SELECTOR;/**< Assign popup font color, you can also assign default popup font color from macro "ColorFont" at the top*/
+    
+@property (nonatomic,retain) UIFont* popUpFont UI_APPEARANCE_SELECTOR;/**< Assign popup font, you can also prepare default popup font from macro "FontName" and "FontSize" at the top
+    default font name:Helvetica-Bold and font-size:15*/
+    
+    
 @property (nonatomic,assign) BOOL validateOnCharacterChanged; /**< Default is YES, Use it whether you want to validate text on character change or not.*/
 
 @property (nonatomic,assign) BOOL validateOnResign; /**< Default is YES, Use it whether you want to validate text on resign or not.*/
