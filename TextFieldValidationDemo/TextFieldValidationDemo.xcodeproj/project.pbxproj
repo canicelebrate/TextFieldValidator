@@ -22,9 +22,6 @@
 		6C2652AD194080A400948579 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C2652AB194080A400948579 /* InfoPlist.strings */; };
 		6C2652AF194080A400948579 /* TextFieldValidationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2652AE194080A400948579 /* TextFieldValidationDemoTests.m */; };
 		6C90C46E194B33B900AF714F /* TextFieldValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C90C46D194B33B900AF714F /* TextFieldValidator.m */; };
-		C2D1BCD91DB5392F005ECD6F /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = C2D1BCD61DB5392F005ECD6F /* LICENSE.md */; };
-		C2D1BCDA1DB5392F005ECD6F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C2D1BCD71DB5392F005ECD6F /* README.md */; };
-		C2D1BCDB1DB5392F005ECD6F /* TextFieldValidator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C2D1BCD81DB5392F005ECD6F /* TextFieldValidator.podspec */; };
 		C2D1BCDD1DB5C71B005ECD6F /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D1BCDC1DB5C71B005ECD6F /* Launch.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -62,9 +59,6 @@
 		6C2652AE194080A400948579 /* TextFieldValidationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldValidationDemoTests.m; sourceTree = "<group>"; };
 		6C90C46C194B33B900AF714F /* TextFieldValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldValidator.h; sourceTree = "<group>"; };
 		6C90C46D194B33B900AF714F /* TextFieldValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldValidator.m; sourceTree = "<group>"; };
-		C2D1BCD61DB5392F005ECD6F /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		C2D1BCD71DB5392F005ECD6F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C2D1BCD81DB5392F005ECD6F /* TextFieldValidator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TextFieldValidator.podspec; sourceTree = "<group>"; };
 		C2D1BCDC1DB5C71B005ECD6F /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,9 +149,6 @@
 		6C265277194080A300948579 = {
 			isa = PBXGroup;
 			children = (
-				C2D1BCD61DB5392F005ECD6F /* LICENSE.md */,
-				C2D1BCD71DB5392F005ECD6F /* README.md */,
-				C2D1BCD81DB5392F005ECD6F /* TextFieldValidator.podspec */,
 				6C265289194080A300948579 /* TextFieldValidationDemo */,
 				6C2652A8194080A400948579 /* TextFieldValidationDemoTests */,
 				6C265282194080A300948579 /* Frameworks */,
@@ -290,7 +281,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C0CB9AF194868040036DA01 /* Main.storyboard in Resources */,
-				C2D1BCDB1DB5392F005ECD6F /* TextFieldValidator.podspec in Resources */,
 				6C0CB9B2194868040036DA01 /* Images.xcassets in Resources */,
 				C2D1BCDD1DB5C71B005ECD6F /* Launch.storyboard in Resources */,
 			);
@@ -314,9 +304,7 @@
 				6C0CB9AD194868040036DA01 /* SecondViewController.m in Sources */,
 				6C0CB9AB194868040036DA01 /* ViewController.m in Sources */,
 				6C0CB9AC194868040036DA01 /* main.m in Sources */,
-				C2D1BCDA1DB5392F005ECD6F /* README.md in Sources */,
 				6C0CB9AA194868040036DA01 /* AppDelegate.m in Sources */,
-				C2D1BCD91DB5392F005ECD6F /* LICENSE.md in Sources */,
 				6C90C46E194B33B900AF714F /* TextFieldValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
